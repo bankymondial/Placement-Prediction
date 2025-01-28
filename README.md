@@ -23,13 +23,13 @@ ________________________________________________________________________________
 
 ### Dataset
 The dataset contains 10,000 observations with the following features:
-- `CGPA`: (Discrete) Overall grades achieved by the student..
+- `CGPA`: (Continuous) Overall grades achieved by the student.
 - `Internships`: (Discrete) Number of internships a student has done.
 - `Projects`:  (Discrete) Number of projects a student has done
 - `Workshops/Certifications`: (Discrete) Number of courses students have taken to upskill themselves.
 - `ApptitudeTestScore`: (Discrete) Student's Aptitude test score - a part of the recruitment process to understand the Quant and logical thinking of the student.
-- `SoftSkillrating`: (Categorical) Communication is a key role that plays in the placement or in any aspect of the life.
-- `ExtraCurricularActivities`: (Nominal) Whether a student does extracurricular acctivities or not.
+- `SoftSkillrating`: (Continuous) Communication is a key role that plays in the placement or in any aspect of life.
+- `ExtraCurricularActivities`: (Nominal) Whether a student does extracurricular activities or not.
 - `PlacementTraining`: (Nominal) Whether a student underwent one or not. It is provided to students in college to ace the placement process.
 - `SSC_Marks`: (Discrete) Senior Secondary score.
 - `HSC_Marks`: (Discrete) Higher Secondary score.
