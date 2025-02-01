@@ -38,6 +38,7 @@ The dataset contains 10,000 observations with the following features:
 ____________________________________________________________________________________________________________________________________________________
 
 
+
 ### Model Comparison: Validation and Test Set Performance
 
 | **Model**               | **Validation Accuracy** | **Test Accuracy** | **Recall** | **F1 Score** | **ROC AUC** |
@@ -49,6 +50,7 @@ ________________________________________________________________________________
 
 Summary:
 This table compares the performance of different models—Baseline, Important Features Model, Random Forest, and Gradient Boosting—on both the validation and test sets. Metrics like Accuracy, Recall, F1 Score, and ROC AUC were evaluated to assess the models' generalization and ability to predict outcomes. The Baseline model performed the best overall in terms of test accuracy, while Gradient Boosting showed the highest validation accuracy after tuning.
+
 
 ____________________________________________________________________________________________________________________________________________________
 
