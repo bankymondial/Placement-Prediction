@@ -33,6 +33,11 @@ ________________________________________________________________________________
 
 ### Model Performance Comparison
 
+**Logistic Regression** is the best-performing model overall, with the highest scores across *Validation Accuracy*, *Recall*, *F1 Score*, and *ROC AUC*. It consistently outperforms other models on these key metrics, especially in *recall*, which is crucial for identifying placed students (the minority class). **Gradient Boosting** comes close in test set performance, particularly with its higher Test Accuracy and Test ROC AUC, but Logistic Regression provides a better overall balance between precision and recall.
+
+**Most Important Features Model** also performed well, with high recall (0.7648) and F1 score (0.7483) on the validation set, but it didn't surpass Logistic Regression in key metrics.
+
+
 | Metric/Model           | **Logistic Regression** | **Gradient Boosting** | **Random Forest** | **Most Important Features** |
 |-------------------------|-------------------------|-----------------------|-------------------|-----------------------------|
 | **Validation Accuracy**  | 0.7870                  | 0.7755                | 0.7425            | 0.7790                     |
@@ -43,12 +48,6 @@ ________________________________________________________________________________
 | **Test Recall**          | 0.7488                  | 0.6869                | N/A               | N/A                        |
 | **Test F1 Score**        | 0.7307                  | 0.7189                | N/A               | N/A                        |
 | **Test ROC AUC**         | 0.8572                  | 0.8608                | N/A               | N/A                        |
-
-**Best Model Summary**
-
-**Logistic Regression** is the best-performing model overall, with the highest scores across *Validation Accuracy*, *Recall*, *F1 Score*, and *ROC AUC*. It consistently outperforms other models on these key metrics, especially in *recall*, which is crucial for identifying placed students (the minority class). **Gradient Boosting** comes close in test set performance, particularly with its higher Test Accuracy and Test ROC AUC, but Logistic Regression provides a better overall balance between precision and recall.
-
-**Most Important Features Model** also performed well, with high recall (0.7648) and F1 score (0.7483) on the validation set, but it didn't surpass Logistic Regression in key metrics.
 
 
 ____________________________________________________________________________________________________________________________________________________
