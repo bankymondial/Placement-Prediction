@@ -85,7 +85,7 @@ If you want to retrain the model and regenerate the model.bin file, you can run 
 ____________________________________________________________________________________________________________________________________________________
 
 
-### 3. Running the Prediction Locally
+#### 3. Running the Prediction Locally
 ##### 3.1 Start the Waitress Server
 First, run the Flask app with Waitress:
 - Make sure you’re in the project directory.
