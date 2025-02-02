@@ -140,7 +140,7 @@ ________________________________________________________________________________
 
 
 ###### Acknowledgements
-Special thanks to the Datatalks Club for offering a free and practical course on Machine Learning. Alexey and the team are doing a great service to others.
+Special thanks to the Datatalks Club for offering a free and practical course on Machine Learning. Alexey and the team are doing a great service to all learners.
 
 ____________________________________________________________________________________________________________________________________________________
 
