@@ -42,9 +42,6 @@ ________________________________________________________________________________
 
 **Most Important Features Model** also performed well, with high recall (0.7648) and F1 score (0.7483) on the validation set, but it didn't surpass Logistic Regression in key metrics.
 
-**Decision**: **Logistic Regression** is the preferred model for deployment due to its consistency and ability to identify placed students effectively.
-
-
 
 ____________________________________________________________________________________________________________________________________________________
 
