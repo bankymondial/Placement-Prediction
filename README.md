@@ -5,7 +5,7 @@ This project aims to predict the placement of students based on their academic a
 ___________________________________________________________________________________________________________________________________________________
 
 
-###### Why the model matters
+### Why the model matters
 1. The model can be used by educational institutions, career counsellors, and recruiters to assess student profiles and predict placement outcomes, enabling targeted support and optimized recruitment strategies.
 2. The predictive model identifies students at risk of not securing placements, enabling targeted interventions to improve their career outcomes.
 3. Data-driven insights help institutions optimize their academic programs and resource allocation, ultimately boosting overall placement rates.
