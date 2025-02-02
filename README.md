@@ -23,7 +23,7 @@ ________________________________________________________________________________
 
 
 
-# Model Performance Comparison
+### Model Performance Comparison
 
 | Metric                  | **Logistic Regression** | **Gradient Boosting** | **Random Forest** | **Most Important Features** | **Best Model**    |
 |-------------------------|-------------------------|-----------------------|-------------------|----------------------------|-------------------|
@@ -36,13 +36,13 @@ ________________________________________________________________________________
 | **Test F1 Score**        | 0.7307                  | 0.7189                | N/A               | N/A                        | Logistic Regression |
 | **Test ROC AUC**         | 0.8572                  | 0.8608                | N/A               | N/A                        | Gradient Boosting  |
 
-## **Best Model Summary**
+#### **Best Model Summary**
 
-**Logistic Regression** is the best-performing model overall, with the highest scores across **Validation Accuracy**, **Recall**, **F1 Score**, and **ROC AUC**. It consistently outperforms other models on these key metrics, especially in **recall**, which is crucial for identifying placed students. **Gradient Boosting** comes close in **test set performance**, particularly with its higher **Test Accuracy** and **Test ROC AUC**, but **Logistic Regression** provides a better overall balance between precision and recall.
+**Logistic Regression** is the best-performing model overall, with the highest scores across *Validation Accuracy*, *Recall*, *F1 Score*, and *ROC AUC*. It consistently outperforms other models on these key metrics, especially in *recall*, which is crucial for identifying placed students. **Gradient Boosting** comes close in test set performance, particularly with its higher Test Accuracy and Test ROC AUC, but **Logistic Regression** provides a better overall balance between precision and recall.
 
-**Most Important Features Model** also performed well, with **high recall (0.7648)** and **F1 score (0.7483)** on the validation set, but it didn't surpass **Logistic Regression** in key metrics.
+**Most Important Features Model** also performed well, with high recall (0.7648) and F1 score (0.7483) on the validation set, but it didn't surpass Logistic Regression in key metrics.
 
-**Decision**: Logistic Regression is the preferred model for deployment due to its consistency and ability to identify placed students effectively.
+**Decision**: **Logistic Regression** is the preferred model for deployment due to its consistency and ability to identify placed students effectively.
 
 
 
