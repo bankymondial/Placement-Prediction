@@ -85,16 +85,26 @@ First, run the Flask app with Waitress:
 - In one terminal window, start the Flask app by running `predict.py`
 - This will launch the Flask app and Waitress will start serving the model at http://0.0.0.0:9090, meaning it will listen on port 9090 for incoming requests.
 
+________________________________________________________________________
+
 ##### 3.2 Open a New Terminal
 While the Flask server is running in the first terminal, open a new terminal window to run the prediction.
 
+________________________________________________________________________
+
+
 ##### 3.3 Make Predictions
 Once the server is running, you can test the predictions by sending a POST request to the `/predict` endpoint. You can do this either through the provided `predict-test.py` script or using `curl` from the command line.
+
+________________________________________________________________________
 
 ###### - Using the Python Script (`predict-test.py`)
 The easiest way to test predictions is by using the provided Python script, `predict-test.py`. In the new terminal window, run the following command: `python predict-test.py`. This will send a request to the server and print the prediction result.
 - The script will use predefined input data and output the predicted placement status along with the probability of placement.
 - You can modify predict-test.py if you want to test with different data.
+
+________________________________________________________________________
+
 
 ###### - Using Curl
 Alternatively, repeat steps 3.1 and 3.2, then run `curl` to send a POST request to the server for prediction. 
@@ -116,18 +126,17 @@ This will restart the server and allow you to continue making predictions.
 ____________________________________________________________________________________________________________________________________________________
 
 
-###### Why This Project Matters
-By predicting .........,  can:
-- .
-- .
-- .
+###### Why This Model Matters
+1. The model can be used by educational institutions, career counsellors, and recruiters to assess student profiles and predict placement outcomes, enabling targeted support and optimized recruitment strategies.
+2. The predictive model identifies students at risk of not securing placements, enabling targeted interventions to improve their career outcomes.
+3. Data-driven insights help institutions optimize their academic programs and resource allocation, ultimately boosting overall placement rates.
 
 
 ____________________________________________________________________________________________________________________________________________________
 
 
 ###### Acknowledgements
-Special thanks to the Datatalks Club for offering a free and practical course on Machine Learning. Deep gratitude to Alexey and the team for their hard work and dedication.
+Special thanks to the Datatalks Club for offering a free and practical course on Machine Learning. Alexey and the team are doing a great service to others.
 
 ____________________________________________________________________________________________________________________________________________________
 
