@@ -63,7 +63,7 @@ ________________________________________________________________________________
 #### 2. Setup and Installation
 ##### 2.1. Clone the Repository
 Clone the project to your local machine and navigate into the directory:
-    [git clone https://github.com/bankymondial/Predicting-Gym-Class-Attendance.git](https://github.com/bankymondial/Placement-Prediction.git)
+  (https://github.com/bankymondial/Placement-Prediction.git)]
     cd Predicting-Gym-Class-Attendance
     
 ##### 2.2 Install Dependencies
