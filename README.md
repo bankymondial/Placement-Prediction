@@ -63,36 +63,54 @@ ________________________________________________________________________________
 #### 2. Setup and Installation
 ##### 2.1. Clone the Repository
 Clone the project to your local machine and navigate into the directory:
-   git clone https://github.com/bankymondial/Placement-Prediction.git
-   cd Placement-Prediction
+   - git clone https://github.com/bankymondial/Placement-Prediction.git: This command clones the project from GitHub to your local machine into a directory named Placement-Prediction.
+   - `cd Placement-Prediction`: After cloning the project, this command moves you into the Placement-Prediction directory so you can work on it locally.
     
 ##### 2.2 Install Dependencies
-Set up a virtual environment and install the necessary Python packages:
-    `pipenv install`
+Setting up a virtual environment and installing the necessary dependencies is a crucial step to ensure the right versions of packages are used:
+   - `pipenv install` - This command will create a Pipfile (if it doesn’t exist already) and install all the dependencies listed in the Pipfile into a virtual environment. It’s important to activate the virtual environment to ensure you’re using the isolated environment.
     
 ##### 2.3 Train the Model (optional)
-To retrain the model, run the training script:
-   `python train.py`
-   
-_This generates `model.bin`, which contains the trained model and the DictVectorizer._
+If you want to retrain the model and regenerate the model.bin file, you can run the training script: `python train.py`
+- This will execute the `train.py` script, which trains the model and saves it as `model.bin`, along with any necessary transformations like the DictVectorizer.
+- The `model.bin` file will be used later when making predictions.
 
 ____________________________________________________________________________________________________________________________________________________
 
 
 ### 3. Running the Prediction Locally
 ##### 3.1 Start the Waitress Server
-Run the Flask app with Waitress:
-    waitress-serve --listen=0.0.0.0:5454 predict:app
-_The API will be accessible at `http://localhost:5454/`._
+First, run the Flask app with Waitress:
+- Make sure you’re in the project directory.
+- In one terminal window, start the Flask app by running `predict.py`
+- This will launch the Flask app and Waitress will start serving the model at http://0.0.0.0:9090, meaning it will listen on port 9090 for incoming requests.
 
-##### 3.2 Make Predictions
-    You can test predictions using `curl` or the provided `predict-test.py` script:
+##### 3.2 Open a New Terminal
+While the Flask server is running in the first terminal, open a new terminal window to run the prediction.
+
+##### 3.3 Make Predictions
+Once the server is running, you can test the predictions by sending a POST request to the `/predict` endpoint. You can do this either through the provided `predict-test.py` script or using `curl` from the command line.
+
+###### - Using the Python Script (`predict-test.py`)
+The easiest way to test predictions is by using the provided Python script, `predict-test.py`. In the new terminal window, run the following command: `python predict-test.py`. This will send a request to the server and print the prediction result.
+- The script will use predefined input data and output the predicted placement status along with the probability of placement.
+- You can modify predict-test.py if you want to test with different data.
+
 ###### - Using Curl
-    curl -X POST http://localhost:5454/predict \
-    -H "Content-Type: application/json" \
-    -d '{"months_as_member": 12, "weight": 70, "category": "Cycling"}'
-###### - Using the Python script:
-    python predict-test.py
+Alternatively, repeat steps 3.1 and 3.2, then run `curl` to send a POST request to the server for prediction. 
+You can use the example command below or change the feature values:
+`curl -X POST http://localhost:9090/predict -H "Content-Type: application/json" -d '{"cgpa": 7, "internships": 2, "projects": 2, "workshopscertifications": 3, "aptitudetestscore": 80, "softskillsrating": 4.6, "extracurricularactivities": "Yes", "placementtraining": "Yes", "ssc_marks": 78, "hsc_marks": 80}'`
+- This sends a JSON payload with the student's features to the `/predict` endpoint.
+- The response will be in JSON format, showing the predicted placement status and the probability of placement.
+
+____________________________________________________________________________________________________________________________________________________
+
+
+###### Troubleshooting: Restarting the Server
+If the server is already running, and you want to restart it:
+1. In the terminal where the server is running, stop the Flask server by pressing Ctrl+C.
+2. Then, start the server again with: `python predict.py`
+This will restart the server and allow you to continue making predictions.
 
 
 ____________________________________________________________________________________________________________________________________________________
