@@ -2,19 +2,7 @@
 
 This project aims to predict the placement of students based on their academic and extracurricular activities. The data source was not explicit on the target variable, `placementstatus` whether a student is placed or not. However, one can infer from variables such as higher and senior secondary marks that the model seeks to predict a student's placement at a higher level of education, maybe college. The data for the modelling can found at [Kaggle](https://www.kaggle.com/datasets/ruchikakumbhar/placement-prediction-dataset?select=placementdata.csv).
 
-____________________________________________________________________________________________________________________________________________________
-
-
-### Repository Overview
-This repository contains:
-
-1. Training Scripts: 
-2. Prediction Scripts: 
-3. Deployment Scripts: 
-4. API Documentation: 
-6. Deployment to the cloud: 
-
-____________________________________________________________________________________________________________________________________________________
+___________________________________________________________________________________________________________________________________________________
 
 
 ### Dataset
@@ -60,12 +48,62 @@ ________________________________________________________________________________
 
 ____________________________________________________________________________________________________________________________________________________
 
+### Instructions for Running the Project
+To predict placement using the trained model, follow these chronological steps:
+
+#### 1. Prerequisites
+Ensure you have the following installed:
+- Python: Version >= 3.12
+- Pipenv: For dependency management
+- curl: For API testing
+
+____________________________________________________________________________________________________________________________________________________
+
+
+#### 2. Setup and Installation
+##### 2.1. Clone the Repository
+Clone the project to your local machine and navigate into the directory:
+    [git clone https://github.com/bankymondial/Predicting-Gym-Class-Attendance.git](https://github.com/bankymondial/Placement-Prediction.git)
+    cd Predicting-Gym-Class-Attendance
+    
+##### 2.2 Install Dependencies
+Set up a virtual environment and install the necessary Python packages:
+    `pipenv install`
+    
+##### 2.3 Train the Model (optional)
+To retrain the model, run the training script:
+   `python train.py`
+   
+_This generates `model.bin`, which contains the trained model and the DictVectorizer._
+
+____________________________________________________________________________________________________________________________________________________
+
+
+### 3. Running the Prediction Locally
+##### 3.1 Start the Waitress Server
+Run the Flask app with Waitress:
+    waitress-serve --listen=0.0.0.0:5454 predict:app
+_The API will be accessible at `http://localhost:5454/`._
+
+##### 3.2 Make Predictions
+    You can test predictions using `curl` or the provided `predict-test.py` script:
+###### - Using Curl
+    curl -X POST http://localhost:5454/predict \
+    -H "Content-Type: application/json" \
+    -d '{"months_as_member": 12, "weight": 70, "category": "Cycling"}'
+###### - Using the Python script:
+    python predict-test.py
+
+
+____________________________________________________________________________________________________________________________________________________
+
 
 ###### Why This Project Matters
 By predicting .........,  can:
 - .
 - .
 - .
+
 
 ____________________________________________________________________________________________________________________________________________________
 
