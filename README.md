@@ -33,7 +33,7 @@ ________________________________________________________________________________
 
 ### Model Performance Comparison
 
-| Metric                  | **Logistic Regression** | **Gradient Boosting** | **Random Forest** | **Most Important Features** |
+| Metric/Model            | **Logistic Regression** | **Gradient Boosting** | **Random Forest** | **Most Important Features** |
 |-------------------------|-------------------------|-----------------------|-------------------|-----------------------------|
 | **Validation Accuracy**  | 0.7870                  | 0.7755                | 0.7425            | 0.7790                     |
 | **Recall**               | 0.7590                  | 0.7322                | 0.7159            | 0.7648                     |
