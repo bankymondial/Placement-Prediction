@@ -63,8 +63,8 @@ ________________________________________________________________________________
 #### 2. Setup and Installation
 ##### 2.1. Clone the Repository
 Clone the project to your local machine and navigate into the directory:
-  (https://github.com/bankymondial/Placement-Prediction.git)]
-    cd Predicting-Gym-Class-Attendance
+   git clone https://github.com/bankymondial/Placement-Prediction.git
+   cd Placement-Prediction
     
 ##### 2.2 Install Dependencies
 Set up a virtual environment and install the necessary Python packages:
