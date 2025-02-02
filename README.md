@@ -65,11 +65,18 @@ ________________________________________________________________________________
 Clone the project to your local machine and navigate into the directory:
    - git clone https://github.com/bankymondial/Placement-Prediction.git: This command clones the project from GitHub to your local machine into a directory named Placement-Prediction.
    - `cd Placement-Prediction`: After cloning the project, this command moves you into the Placement-Prediction directory so you can work on it locally.
+
+________________________________________________________________________
+
     
 ##### 2.2 Install Dependencies
 Setting up a virtual environment and installing the necessary dependencies is a crucial step to ensure the right versions of packages are used:
    - `pipenv install` - This command will create a Pipfile (if it doesn’t exist already) and install all the dependencies listed in the Pipfile into a virtual environment. It’s important to activate the virtual environment to ensure you’re using the isolated environment.
-    
+
+
+________________________________________________________________________
+
+
 ##### 2.3 Train the Model (optional)
 If you want to retrain the model and regenerate the model.bin file, you can run the training script: `python train.py`
 - This will execute the `train.py` script, which trains the model and saves it as `model.bin`, along with any necessary transformations like the DictVectorizer.
