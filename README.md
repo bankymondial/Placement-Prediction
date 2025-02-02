@@ -54,11 +54,11 @@ ________________________________________________________________________________
 
 ## **Best Model Summary**
 
-### **Logistic Regression** is the best-performing model overall, with the highest scores across **Validation Accuracy**, **Recall**, **F1 Score**, and **ROC AUC**. It consistently outperforms other models on these key metrics, especially in **recall**, which is crucial for identifying placed students. **Gradient Boosting** comes close in **test set performance**, particularly with its higher **Test Accuracy** and **Test ROC AUC**, but **Logistic Regression** provides a better overall balance between precision and recall.
+**Logistic Regression** is the best-performing model overall, with the highest scores across **Validation Accuracy**, **Recall**, **F1 Score**, and **ROC AUC**. It consistently outperforms other models on these key metrics, especially in **recall**, which is crucial for identifying placed students. **Gradient Boosting** comes close in **test set performance**, particularly with its higher **Test Accuracy** and **Test ROC AUC**, but **Logistic Regression** provides a better overall balance between precision and recall.
 
-### **Most Important Features Model** also performed well, with **high recall (0.7648)** and **F1 score (0.7483)** on the validation set, but it didn't surpass **Logistic Regression** in key metrics.
+**Most Important Features Model** also performed well, with **high recall (0.7648)** and **F1 score (0.7483)** on the validation set, but it didn't surpass **Logistic Regression** in key metrics.
 
-### **Recommendation**: Logistic Regression is the preferred model for deployment due to its consistency and ability to identify placed students effectively.
+**Decision**: Logistic Regression is the preferred model for deployment due to its consistency and ability to identify placed students effectively.
 
 
 
