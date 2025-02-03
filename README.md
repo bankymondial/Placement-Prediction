@@ -1,6 +1,10 @@
 ### Problem Definition
 
-This project aims to predict the placement of students based on their academic and extracurricular activities. The data source was not explicit on the target variable, `placementstatus` whether a student is placed or not. However, one can infer from variables such as higher and senior secondary marks that the model seeks to predict a student's placement at a higher level of education, maybe college. The data for the modelling can be found on [Kaggle](https://www.kaggle.com/datasets/ruchikakumbhar/placement-prediction-dataset?select=placementdata.csv).
+This project aims to predict the likelihood of student placement in higher education based on academic and extracurricular activities. The dataset, sourced from [Kaggle](https://www.kaggle.com/datasets/ruchikakumbhar/placement-prediction-dataset?select=placementdata.csv), includes key features such as CGPA, higher secondary and senior secondary marks, projects, internships, and extracurricular activities.
+
+The target variable (`placementstatus`) is not explicitly defined in the dataset's metadata but is inferred based on academic and non-academic factors. The model will generate a probability score rather than a binary classification, helping assess a student’s likelihood of placement.
+
+The primary users of this model include educational institutions, career counsellors, and recruiters, who can leverage it to analyze student profiles, provide targeted support, and optimize recruitment strategies.
 
 ___________________________________________________________________________________________________________________________________________________
 
