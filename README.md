@@ -6,6 +6,7 @@ The target variable (`placementstatus`) is not explicitly defined in the dataset
 
 The primary users of this model include educational institutions, career counsellors, and recruiters, who can leverage it to analyze student profiles, provide targeted support, and optimize recruitment strategies.
 
+
 ___________________________________________________________________________________________________________________________________________________
 
 
